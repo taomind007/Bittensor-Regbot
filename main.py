@@ -1,17 +1,3 @@
-"""
-This is a script for automatically registering keys on the Bittensor network when the price is under the limit you set.
-This script is provided as is, and has no guarantee.
-It mostly works in my test, but some errors are unhandeled and in that case it will skip to the next hotkey.
-
-NEVER EVER share coldkey mnemonics with anyone or put it in any script. And always be extremely careful with how you use your keys. Please check this script to make sure it hasn't been tampered with.
-
-Usage:
-1. Check the script to control it has not been tampered with, and you know it is safe.
-2. Fill in wallet name, hotkey names, and the max cost and password for your coldkey.
-3. Paste all the code into a file called re_keys.py
-4. Start the program by running: python3 reg_keys.py
-"""
-
 
 wallet = "your wallet"
 hotkeys = ["your hotkeys"] #a list with the names of all the hotkeys you want to register
