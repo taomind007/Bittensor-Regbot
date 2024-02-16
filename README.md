@@ -1,2 +1,2 @@
 # regbot
-#### Registraion bot for bittensor subnet.
+#### Registraion bot for bittensor subnets.
