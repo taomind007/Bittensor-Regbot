@@ -8,7 +8,7 @@ from datetime import datetime
 # configure options for your command
 wallet = "your wallet name"       # wallet name of your coldkey
 hotkeys = ["your hotkeys"]        # a list with the names of all the hotkeys you want to register
-highest_cost = 2.0                # the maximal amount of Tao you are willing to burn to register
+highest_cost = 2.0                # the maximal amount of tao you are willing to burn to register
 password = "your password"        # password for your coldkey
 netuid = 1                        # subnet uid you want to register
 iterate = False
@@ -19,7 +19,7 @@ while True:
         while True:
             try:
                 iterate = False
-                command = 'btcli subnet register --subtensor.network local --netuid {} --wallet.name {} --wallet.hotkey {}'.format(netuid, wallet,hotkey)
+                command = 'btcli subnet register --subtensor.network local --netuid {} --wallet.name {} --wallet.hotkey {}'.format(netuid, wallet, hotkey)
                 
                 # Format the time as HH:MM:SS
                 formatted_time = datetime.now().time().strftime("%H:%M:%S")
