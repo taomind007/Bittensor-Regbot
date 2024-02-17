@@ -70,8 +70,8 @@ while True:
             except Exception as e:
                 print("An error occured", e)
                 print(traceback.format_exc())
-                child.sendintr()  # Send Ctrl+C
-                child.expect(pexpect.EOF)  # Wait for the command to exit
+                child.sendintr()             # Send Ctrl+C
+                child.expect(pexpect.EOF)    # Wait for the command to exit
                 if iterate:
                     break
                 else:
