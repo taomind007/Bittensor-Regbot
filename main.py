@@ -31,7 +31,7 @@ while True:
                 child = pexpect.spawn(command)
                 child.logfile_read = sys.stdout.buffer
                                 
-                child.expect(r'Registraion cost is (.*?)(?:\n|$)')
+                child.expect(r'The cost to register by recycle is (.*?)(?:\n|$)')
                 cost_str = child.match.group(1).decode('utf-8').replace('τ', '')
                 clean_cost_str = re.sub(r'\x1b\[[0-9;]*m', '', cost_str).strip()
                 cost = float(clean_cost_str)
